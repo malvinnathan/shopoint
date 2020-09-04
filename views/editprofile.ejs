@@ -1,0 +1,128 @@
+<%- include ("partials/accountheader") -%>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-sm-3 col-md-3 col-md-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Edit Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="changepassword">Change Password</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Email and SMS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Push Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Manage Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Privacy and Security</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login Activity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Email Subscription</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col col-sm-9 col-md-9 col-xl-9">
+            <div class="editprofile">
+                <form action= "/editprofile/<%= user.id %>?_method=PUT"  method= "POST">
+                    <div class="form-group row">
+                        <label for="editprofile" class="col-sm-2 col-form-label">Edit Profile</label>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">User ID</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticuserid" value="<%= user.id %>">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="<%= user.email %>">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-5">
+                            <input type="text" id="firstname" name="first_name" class="form-control form-control-sm" value="<%= user.first_name %>">
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" id="lastname" name="last_name" class="form-control form-control-sm" value="<%= user.last_name %>">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-2 col-form-label">Username</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-sm" id="name" name="name" value="<%= user.username %>">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="phonenumber" class="col-sm-2 col-form-label">Phone No</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control form-control-sm" id="phonenumber" name="phonenumber">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="date" class="col-sm-2 col-form-label">Date of Birth</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control form-control-sm" id="birthday" name="birthday" value="<%= user.birthday %>">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticUniversity" class="col-sm-2 col-form-label">University</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-sm" id="uni" name="uni" value="<%= user.uni %>">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticStudentID" class="col-sm-2 col-form-label">Student ID</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-sm" id="studentid" name="studentid" value="<%= user.studentid%>">
+                        </div>
+                    </div>
+
+                    <div class="bposition">
+                        <button type="submit" class="btn btn-outline-dark btn-sm" onclick="successfulalert()"> Update Profile</button>
+                        <button type="reset" class="btn btn-outline-dark btn-sm" > Reset </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<br>
+<div class="container">
+    <div class="row">
+
+        <a class="btn btn-outline-dark btn-sm" href="/index" role="button">Back to Main Page</a>
+
+    </div>
+</div>
+
+<%- include ("partials/script") -%>
+<%- include ("partials/footer") -%>
+
+
+
+<script>
+    function successfulalert() {
+
+        alert("Successfully updated!");
+    }
+</script>
+
+  
+    
+

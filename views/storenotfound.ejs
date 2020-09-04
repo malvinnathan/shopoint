@@ -1,0 +1,74 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<%- include ("partials/accountheader") -%>
+<link href="/css/storepage.css" rel="stylesheet" type="text/css">
+
+<nav class="main-navbar">
+    <div class="container">
+        <!-- menu -->
+        <ul class="main-menu">
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men
+                    <span class="new">New</span></a></li>
+            <li><a href="#">Jewelry
+
+                </a></li>
+
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Student Sales
+
+                </a></li>
+
+        </ul>
+    </div>
+</nav>
+
+<div class= "container">
+
+
+
+    <div class="not-found-text">
+        <h3> Store not found :( </h3>
+        <h5> Search for these instead: </h5>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="store-grid">
+                <div class="product-image">
+                    <a>
+                        <img src="<%= list[0].logo_link%>">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="store-grid">
+                <div class="product-image">
+                    <a>
+                        <img src="<%= list[1].logo_link%>">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="store-grid">
+                <div class="product-image">
+                    <a>
+                        <img src="<%= list[2].logo_link%>">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
+<%- include ("partials/script") -%>
+<%- include ("partials/footer") -%>

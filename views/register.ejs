@@ -1,0 +1,96 @@
+<link href="/css/login-signin-style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+<body class ="signup">
+<div class = "signup-wrapper">
+ <form action="/register" method="POST">
+
+  <h2>Create an account </h2>
+
+  <br>
+  <div>
+   <label for="name"><b>*Username : </b></label>
+   <input type="text" id="username" name="username" required><br>
+  </div>
+  <br>
+  <div>
+   <label for="password"><b>*Password : </b></label>
+   <input type="password" id="password" name="password" minlength="5" required><br>
+  </div>
+  <br>
+  <div>
+   <label for="firstname"><b>*First Name : </b></label>
+   <input type="text" id="first_name" name="first_name" required><br>
+  </div>
+  <br>
+  <div>
+   <label for="lastname"><b>*Last Name : </b></label>
+   <input type="text" id="last_name" name="last_name"><br>
+  </div>
+  <br>
+  <div>
+   <label for="email"><b>*Email : </b></label>
+   <input type="email" id="email" name="email" required><br>
+  </div>
+  <br>
+  <div>
+   <label for="phonenumber"><b>*Phone Number : </b></label>
+   <input type="text" id="phonenumber" name="phonenumber" required><br>
+  </div>
+  <br>
+  <div>
+   <label for="date"><b>*Date of Birth : </b></label>
+   <input type="date" id="birthday" name="birthday"><br>
+  </div>
+  <br>
+  <div>
+   <label for="uni"><b>*University : </b></label>
+   <input type="text" id="uni" name="uni" required><br>
+  </div>
+  <br>
+  <div>
+   <label for="studentid"><b>*Student ID : </b></label>
+   <input type="text" id="studentid" name="studentid" required><br>
+  </div>
+  <br>
+  <div class="bposition">
+   <button type="submit"> CREATE AN ACCOUNT </button>
+
+   <br><br>
+   <span class="text1">
+        Already registered?
+       </span>
+   <a href="/login"> Login</a>
+  </div>
+
+ </form>
+</div>
+</body>
+
+<body>
+
+<div class="slide-show">
+ <img class="mySlides" src="/image/signin&register/register-slide2.jpg">
+ <img class="mySlides" src="/image/signin&register/register-slide3.jpg">
+ <img class="mySlides" src="/image/signin&register/register-slide4.jpg">
+ <img class="mySlides" src="/image/signin&register/register-slide5.jpg">
+</div>
+
+<script>
+ var myIndex = 0;
+ carousel();
+
+ function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 3 seconds
+ }
+</script>
+
+</body>

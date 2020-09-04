@@ -1,0 +1,49 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<%- include ("partials/script") -%>
+<link href="/css/login-signin-style.css" rel="stylesheet" type="text/css">
+
+<% if (messages.error) {%>
+    <div class="alert alert-danger" role="alert">
+        <strong><%= messages.error %></strong> 
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+<% } %>
+
+
+<br>
+<body class = "loginform">
+<form action="/login" method="POST">
+    <div class ="loginform-wrapper">
+        <br><br><br>
+        <img src="/image/signin&register/logo.jpg" />
+        <br><br><br>
+        <div>
+            <input type="text" id="username" name="username" required placeholder="Username"><br>
+        </div>
+        <br>
+        <div>
+            <input type="password" id="password" name="password" minlength="5" required placeholder="Password"><br>
+        </div>
+
+        <br>
+        <button type="submit"> LOGIN </button>
+        <br>
+        <br>
+        <div class="link">
+                <span class="text1">
+                    No account?
+                </span>
+            <a href="/register" class = "register"> Sign up</a>
+        </div>
+    </div>
+
+</form>
+</body>
+
+<footer>
+    <p>INFO30005 MOCKUP-APP SERVER (ALGOR)</p>
+</footer>

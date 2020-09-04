@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+                          <!-- Seperated our header, topbar menu and master scripts(javascript which need to be load in all pages) code.
+                                                        And all the partials files are included in views/index.ejs file -->
+    <%- include ("partials/head") -%>             <!--Header ejs-->
+
+
+      <body>
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+        <!-- Slide section -->
+        <section class="hero-section">
+            <div class="hero-slider owl-carousel">
+                <div class="hs-item set-bg" data-setbg="./image/student.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-7 text-white">
+                                <h4>MYER</h4>
+                                <h3> Student winter fashion </h3>
+
+                                <p>Free shipping on purchases over $100 </p>
+                                <a  class="site-btn ">DISCOVER</a>
+
+                            </div>
+                        </div>
+                        <div class="offer-card text-white">
+                            <span>Student</span>
+                            <h2>8%</h2>
+                            <p>Everyday</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hs-item set-bg" data-setbg="./image/casio.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-7 text-white">
+                                <h4>Casio</h4>
+                                <span>New Arrivals</span>
+                                <h3> Student 10% off sitewide </h3>
+                                <p>Hurry,limited time. </p>
+                               </br>
+                                <a  class="site-btn ">DISCOVER</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="hs-item set-bg" data-setbg="./image/bg-2.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-7 text-white">
+                                <h4>H&M</h4>
+                                <h3> Up to 20% off </h3>
+                                <h3> Student Discount  </h3>
+                                <p>was 10%</p>
+                                </br>
+                                <a  class="site-btn ">GET NOW</a>
+
+                            </div>
+                        </div>
+                        <div class="offer-card text-white">
+                            </br>
+                            <h3>Student</h3>
+                            <h3>Only</h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="container">
+                <div class="slide-num-holder" id="snh-1"></div>
+            </div>
+        </section>
+
+<!-- list product section -->
+<section class="top-letest-product-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Latest Products</h2>
+        </div>
+        <div class="product-slider owl-carousel">
+            <div class="product-item">
+                <div class="pi-pic">
+                    <img src="./image/product/1.jpg" alt="">
+                    <div class="pi-links">
+                        <a  class="add-card"><i class="flaticon-bag"></i><span>DETAILS</span></a>
+                        <a  class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                    </div>
+                </div>
+                <div class="pi-text">
+                    <h6>$220.00</h6>
+                    <p>Adidas Human Made </p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="pi-pic">
+                    <div class="tag-new">NEW</div>
+                    <img src="./image/product/2.jpg" alt="">
+                    <div class="pi-links">
+                        <a  class="add-card"><i class="flaticon-bag"></i><span>DETAILS</span></a>
+                        <a  class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                    </div>
+                </div>
+                <div class="pi-text">
+                    <h6>$135.00</h6>
+                    <p> BAPE T-shirt</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="pi-pic">
+                    <img src="./image/product/3.jpg" alt="">
+                    <div class="pi-links">
+                        <a  class="add-card"><i class="flaticon-bag"></i><span>DETAILS</span></a>
+                        <a  class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                    </div>
+                </div>
+                <div class="pi-text">
+                    <h6>$95.00</h6>
+                    <p>Nike Pro Jordan Jumpman Cap </p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="pi-pic">
+                    <img src="./image/product/4.jpg" alt="">
+                    <div class="pi-links">
+                        <a  class="add-card"><i class="flaticon-bag"></i><span>DETAILS</span></a>
+                        <a  class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                    </div>
+                </div>
+                <div class="pi-text">
+                    <h6>$85.00</h6>
+                    <p>Converse Chuck Taylor All Star Hi-top Shoes </p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="pi-pic">
+                    <img src="./image/product/5.jpg" alt="">
+                    <div class="pi-links">
+                        <a  class="add-card"><i class="flaticon-bag"></i><span>DETAILS</span></a>
+                        <a class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                    </div>
+                </div>
+                <div class="pi-text">
+                    <h6>$505.00</h6>
+                    <p>GG Marmont matelassé leather bag </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+               <div class="container">
+               <div class="col-13">
+                  <h2 class="title">Popular Brands</h2>
+                   <div class="row">
+
+
+                   <div class="col-lg-3 col-md-6 mb-4 ">
+                       <div class="card h-80">
+
+                           <a ><img class="card-img-top" src="./image/product/nike.png" alt=""></a>
+                           <div class="card-body">
+                               <h4 class="card-title">
+                                   <a >Nike</a>
+                               </h4>
+                               <h5>5% Student Discount</h5>
+                               <p class="card-text"> </p>
+                               <p class="card-text">Ends: 5 days</p>
+                           </div>
+
+                       </div>
+                   </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-80">
+                    <a ><img class="card-img-top" src="./image/product/super.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a h>Superdry</a>
+                        </h4>
+                        <h5>Up to 5% discount</h5>
+                        <p class="card-text"> </p>
+                        <p class="card-text">Ends: 9 days</p>
+                    </div>
+
+                </div>
+            </div>
+
+                   <div class="col-lg-3 col-md-6 mb-4">
+                       <div class="card h-80">
+                           <a ><img class="card-img-top" src="./image/product/gap.png" alt=""></a>
+                           <div class="card-body">
+                               <h4 class="card-title">
+                                   <a >Gap</a>
+                               </h4>
+                               <h5> 8% Student Discount</h5>
+                               <p class="card-text"> </p>
+                               <p class="card-text">Ends: 8 days</p>
+                           </div>
+
+                       </div>
+                   </div>
+
+                   <div class="col-lg-3 col-md-6 mb-4">
+                       <div class="card h-80">
+                           <a ><img class="card-img-top" src="./image/product/levi.jpg" alt=""></a>
+                           <div class="card-body">
+                               <h4 class="card-title">
+                                   <a >Levi's</a>
+                               </h4>
+                               <h5> 2.5% Student Discount</h5>
+                               <p class="card-text"> </p>
+                               <p class="card-text">Ends: 10 days</p>
+                           </div>
+
+                       </div>
+                   </div>
+
+               </div>
+                   </div>
+
+                   <h2 class="title">Increased Discounts</h2>
+                   <div class="row ">
+                   <div class="col-lg-3 col-md-6 mb-4">
+                       <div class="card h-80">
+                           <a ><img class="card-img-top" src="./image/product/converse.jpg" alt=""></a>
+                           <div class="card-body">
+                               <h4 class="card-title">
+                                   <a >Converse</a>
+                               </h4>
+                               <h5>Extra 8% Student Discount</h5>
+                               <p class="card-text">Was 5%</p>
+                               <p class="card-text">Ends:6 days</p>
+                           </div>
+
+                       </div>
+                   </div>
+
+                   <div class="col-lg-3 col-md-6 mb-4">
+                       <div class="card h-80">
+                           <a  onclick="return false;"><img class="card-img-top" src="./image/product/cham.jpg" alt=""></a>
+                           <div class="card-body">
+                               <h4 class="card-title">
+                                   <a >Champion</a>
+                               </h4>
+                               <h5>10% Off</h5>
+                               <p class="card-text">Was 8%</p>
+                               <p class="card-text">Ends:12 days</p>
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 mb-4">
+                       <div class="card h-80">
+                           <a ><img class="card-img-top" src="./image/product/sicko.jpg" alt=""></a>
+                           <div class="card-body">
+                               <h4 class="card-title">
+                                   <a >Sicko</a>
+                               </h4>
+                               <h5> 20% Off</h5>
+                               <p class="card-text">Was 5%</p>
+                               <p class="card-text">Ends:15 days</p>
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 mb-4">
+                       <div class="card h-80">
+                           <a ><img class="card-img-top" src="./image/product/puma.jpg" alt=""></a>
+                           <div class="card-body">
+                               <h4 class="card-title">
+                                   <a >Puma</a>
+                               </h4>
+                               <h5>10% Off</h5>
+                               <p class="card-text">Was 5%</p>
+                               <p class="card-text">Ends:5 days</p>
+                           </div>
+
+                       </div>
+                   </div>
+
+                   </div>
+
+        </div>
+        <!-- /.row -->
+
+
+    <!-- /.col-lg-9 -->
+
+
+ <br>
+           <!-- Banner section -->
+           <section class="banner-section">
+               <div class="container">
+                   <div class="banner set-bg" data-setbg="./image/Group2.png">
+                       <div class="tag-new">NEW</div>
+                       <span>New Arrivals</span>
+                       <h2>Supreme </h2>
+                       <a  class="site-btn text-white">SHOP NOW</a>
+                   </div>
+               </div>
+           </section>
+           <!-- Banner section end  -->
+
+
+
+
+</body>
+<%- include ("partials/script") -%>
+<%- include ("partials/footer") -%>

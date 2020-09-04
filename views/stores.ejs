@@ -1,0 +1,124 @@
+<link href="/css/storepage.css" rel="stylesheet" type="text/css">
+<%- include ("partials/accountheader") -%>
+<nav class="main-navbar">
+    <div class="container">
+        <!-- menu -->
+        <ul class="main-menu">
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men
+                    <span class="new">New</span></a></li>
+            <li><a href="#">Jewelry
+
+                </a></li>
+
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Student Sales
+
+                </a></li>
+
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="logo-name">
+        <img class="logo" src="<%= store.logo_link%>">
+        <div class="logo-addr">
+            <h3 class="store-name"><%= store.storename%> ----- <%= store.discount%> off</h3>
+            <br>
+            <h5 class="store-addr"><%= store.store_addr%></h5>
+        </div>
+    </div>
+
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a>
+                        <img class="pic-1" src="<%= store.product1%>">
+                        <img class="pic-2" src="<%= store.p1_alt%>">
+                    </a>
+
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label"><%= store.discount%></span>
+
+                </div>
+
+                <div class="product-content">
+                    <h3 class="title">product1</h3>
+                    <div class="price">$160<span>$200</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a>
+                        <img class="pic-1" src="<%= store.product2%>">
+                        <img class="pic-2" src="<%= store.p2_alt%>">
+                    </a>
+
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label"><%= store.discount%></span>
+
+                </div>
+
+                <div class="product-content">
+                    <h3 class="title">product2</h3>
+                    <div class="price">$160<span>$200</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a>
+                        <img class="pic-1" src="<%= store.product3%>">
+                        <img class="pic-2" src="<%= store.p3_alt%>">
+                    </a>
+
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label"><%= store.discount%></span>
+
+                </div>
+
+                <div class="product-content">
+                    <h3 class="title">product3</h3>
+                    <div class="price">$160<span>$200</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a>
+                        <img class="pic-1" src="<%= store.product4%>">
+                        <img class="pic-2" src="<%= store.p4_alt%>">
+                    </a>
+
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label"><%= store.discount%></span>
+
+                </div>
+
+                <div class="product-content">
+                    <h3 class="title">product4</h3>
+                    <div class="price">$160<span>$200</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<br><br><br><br>
+<%- include ("partials/script") -%>
+<%- include ("partials/footer") -%>
